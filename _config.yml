@@ -5,4 +5,5 @@ social:
   email: "woojiahao1234@gmail.com"
   github: "woojiahao"
   twitter: "woojiahao_"
-  rss: true
+
+rss: true

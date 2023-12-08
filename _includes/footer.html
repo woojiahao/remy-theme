@@ -1,0 +1,30 @@
+<footer>
+    <div>
+        <p>
+            Copyright &copy; {{ site.time | date: '%Y' }} {{ site.author }}
+        </p>
+    </div>
+
+    <div>
+        <p>Navigate</p>
+        <ul>
+            {% for item in site.data.navigation %}
+            <li>
+                <a href="{{ item.url }}" {% if page.url==item.link %}class="current" {% endif %}>{{ item.title }}</a>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+
+    <div>
+        <!-- TODO: Support dynamically generating the socials -->
+        <p>Socials</p>
+        <ul>
+            {% for item in site.social %}
+            <li>
+                {{ item }}
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</footer>

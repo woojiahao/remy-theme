@@ -1,0 +1,13 @@
+---
+layout: default
+---
+
+<div class="recipe">
+    <div class="ingredients">
+        <ul>
+            {% for item in page.ingredients %}
+            <li>{{ item }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
