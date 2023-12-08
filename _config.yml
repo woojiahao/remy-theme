@@ -1,6 +1,9 @@
-title: "Remy"
-author: "Woo Jia Hao"
+title: "Remy" # Change this for your project title
+author: "Woo Jia Hao" # Change this to yourself
+profile_picture: "profile_picture.jpeg" # Change this to the appropriate file
+about: "Hi! I am a computer science undergraduate at NUS and I love to cook whenever I can!"
 
+# Change these
 social:
   email: "woojiahao1234@gmail.com"
   github: "woojiahao"

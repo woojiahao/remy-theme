@@ -3,6 +3,7 @@
 @import "footer";
 @import "navigation";
 @import "recipe_preview";
+@import "profile";
 
 * {
     margin: 0;
@@ -28,5 +29,16 @@ p:not(:last-child) {
 
 
 .container {
-    margin: 2rem 20rem;
+    display: flex;
+    flex-direction: row;
+    margin: 4rem 5rem;
+    justify-content: space-between;
+
+    .profile {
+        flex-basis: 30%;
+    }
+
+    .content {
+        flex-basis: 65%;
+    }
 }

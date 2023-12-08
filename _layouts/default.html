@@ -12,9 +12,11 @@
 
 <body>
     {% include navigation.html %}
-    <!-- TODO: Add user details at the very top -->
     <div class="container">
-        {{ content }}
+        {% include profile.html %}
+        <div class="content">
+            {{ content }}
+        </div>
     </div>
     {% include footer.html %}
 </body>

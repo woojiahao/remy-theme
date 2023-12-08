@@ -26,8 +26,8 @@
         background-color: transparent;
         border: none;
         border-radius: $rounded;
-        padding: 8px 25px;
-        font-size: $font-size;
+        padding: 8px 15px;
+        font-size: calc($font-size - 3px);
         font-family: $font-family;
         border: 1px solid $color-text-primary;
         text-transform: uppercase;
