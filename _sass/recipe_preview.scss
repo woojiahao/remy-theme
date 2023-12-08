@@ -1,0 +1,42 @@
+.recipe-preview {
+    img {
+        border-radius: $rounded;
+        width: 100%;
+        max-height: 450px;
+        object-fit: cover;
+        object-position: bottom;
+    }
+
+    .title {
+        margin-bottom: 1rem;
+
+        p {
+            color: $color-text-subtitle;
+        }
+    }
+
+    .solid {
+        border: none;
+        border-top: 1px dashed $color-text-subtitle;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    button {
+        background-color: transparent;
+        border: none;
+        border-radius: $rounded;
+        padding: 8px 25px;
+        font-size: $font-size;
+        font-family: $font-family;
+        border: 1px solid $color-text-primary;
+        text-transform: uppercase;
+        transition: all 0.2s;
+    }
+
+    button:hover {
+        cursor: pointer;
+        background-color: $color-text-primary;
+        color: $color-white;
+    }
+}

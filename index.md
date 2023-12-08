@@ -3,4 +3,4 @@ title: Home
 layout: default
 ---
 
-# Welcome!
+{% include recipe_preview.html %}

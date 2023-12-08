@@ -1,0 +1,24 @@
+<div class="recipe-preview">
+    {% for post in site.posts %}
+    {% if post.layout == "recipe" %}
+    <div class="title">
+        <h1>
+            {{ post.title }}
+        </h1>
+        <p>
+            {{ post.date | date: "%-d %B %Y" }}
+        </p>
+    </div>
+    {% if post.preview_image != nil %}
+    <img src="/assets/images/{{ post.preview_image }}" alt="Preview of {{ post.title }}">
+    {% endif %}
+    <p>
+        {{ post.excerpt }}
+    </p>
+    <button type="button">Read More</button>
+    {% if forloop.index != site.posts.size - 1 %}
+    <hr class="solid">
+    {% endif %}
+    {% endif %}
+    {% endfor %}
+</div>

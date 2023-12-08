@@ -1,0 +1,25 @@
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 30px;
+    width: 100%;
+    row-gap: 0.5rem;
+    background-color: $color-white;
+
+    h1 {
+        font-size: 2.4rem;
+    }
+
+    div {
+        display: flex;
+        flex-direction: row;
+        column-gap: 2rem;
+        justify-content: center;
+
+        a {
+            color: $color-text-subtitle;
+            text-transform: uppercase;
+        }
+    }
+}
