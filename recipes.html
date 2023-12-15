@@ -1,0 +1,10 @@
+---
+layout: default
+title: Recipes
+---
+
+<h1>Recipes</h1>
+
+{% for post in site.posts | where:"layout","recipe" | group_by_exp:"post", "post.tag | replace: nil, 'Uncategorized'" %}
+{{ post.title }}
+{% endfor %}

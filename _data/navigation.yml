@@ -1,15 +1,15 @@
 # Add/remove list items if your navigation changes
 - title: Home
-  url: index.html
+  url: /index.html
 
 - title: About
-  url: about.html
+  url: /about.html
 
 - title: Recipes
-  url: recipes.html
+  url: /recipes.html
 
 - title: Gallery
-  url: gallery.html
+  url: /gallery.html
 
 - title: Posts
-  url: posts.html
+  url: /posts.html

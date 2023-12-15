@@ -1,9 +1,11 @@
 <div class="recipe-preview">
-    {% for post in site.posts %}
+    {% for post in site.posts limit:5 %}
     {% if post.layout == "recipe" %}
     <div class="title">
         <h1>
-            {{ post.title }}
+            <a href="{{ post.url }}">
+                {{ post.title }}
+            </a>
         </h1>
         <p>
             {{ post.date | date: "%-d %B %Y" }}
@@ -15,10 +17,14 @@
     <p>
         {{ post.excerpt }}
     </p>
-    <button type="button">Read More</button>
+    <a class="button" href="{{ post.url }}">Read More</a>
     {% if forloop.index != site.posts.size - 1 %}
     <hr class="solid">
     {% endif %}
     {% endif %}
     {% endfor %}
+
+    {% if site.posts.size == 0 %}
+    <div>You don't have any recipes! Add one first!</div>
+    {% endif %}
 </div>

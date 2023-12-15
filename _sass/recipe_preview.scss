@@ -13,16 +13,27 @@
         p {
             color: $color-text-subtitle;
         }
+
+        h1 {
+            a {
+                font-weight: bold;
+            }
+        }
+
+        h1:hover {
+            text-decoration: underline;
+            text-decoration-color: $color-text-subtitle;
+        }
     }
 
     .solid {
         border: none;
         border-top: 1px dashed $color-text-subtitle;
-        margin-top: 1rem;
-        margin-bottom: 1rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
     }
 
-    button {
+    .button {
         background-color: transparent;
         border: none;
         border-radius: $rounded;
@@ -34,7 +45,7 @@
         transition: all 0.2s;
     }
 
-    button:hover {
+    .button:hover {
         cursor: pointer;
         background-color: $color-text-primary;
         color: $color-white;
